@@ -1,0 +1,22 @@
+#!name=App VIP Unlock
+#!desc=部分解锁premium,建议重新登录,音质不能设置为超高
+#!openUrl=https://github.com/iDavyn/Quantumult-X-Rules
+
+[Mitm]
+hostname =buy.itunes.apple.com, qianji.xxoojoke.com, pan.baidu.com, appwk.baidu.com
+
+[Script]
+# Picsew解锁专业版
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PicsewProCrack.js, requires-body=true, timeout=10, tag=Picsew
+
+# 钱迹
+http-response https?://qianji.xxoojoke.com/(vip/configios|budget/submit) script-path=https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/qj.js, requires-body=true, timeout=10, tag=钱迹
+
+# 百度网盘(倍速)
+http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/bdcloud.js, requires-body=true, timeout=10, tag=baidu
+
+# > 110 百度文库☆解锁VIP文档阅读权限（2022-10-17）@ddgksf2013
+http-response ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo script-path=https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/baidulibrary.js, requires-body=true, timeout=10, tag=baiduwk
+
+#Bear熊掌记  内购解锁
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xzj.js, requires-body=true, timeout=10, tag=Bear
