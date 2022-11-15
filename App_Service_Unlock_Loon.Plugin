@@ -1,5 +1,5 @@
 #!name=App VIP Unlock
-#!desc=部分解锁premium,建议重新登录,音质不能设置为超高
+#!desc=App VIP Unlock
 #!openUrl=https://github.com/iDavyn/Quantumult-X-Rules
 
 [Mitm]
