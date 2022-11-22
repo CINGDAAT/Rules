@@ -1,6 +1,6 @@
 #!name=Picsew
 #!desc=Picsew VIP Unlock
-#!openUrl=https://github.com/iDavyn/Quantumult-X-Rules
+#!openUrl=https://github.com/Davin-Zhang/Quantumult-X-Rules
 
 [Mitm]
 hostname =buy.itunes.apple.com
