@@ -18,7 +18,6 @@ hostname = ad.12306.cn, 103.91.210.141, js-ad.ayximgs.com, pzoap.moedot.com, pip
 # > 12306
 ^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/12306.js
 
-
 # ======= A ======= #
 # > aihuishou
 ^https?:\/\/gw.aihuishou.com\/app-portal\/home\/getadvertisement url reject
@@ -50,7 +49,6 @@ hostname = ad.12306.cn, 103.91.210.141, js-ad.ayximgs.com, pzoap.moedot.com, pip
 ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/ad url reject-200
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject-200
 
-
 # ======= C ======= #
 # > clicli
 ^https?:\/\/js-ad\.ayximgs\.com\.ad-universe-cdn\.hzhcbkj\.cn\/xgapp\.php\/v2\/top_notice url reject-200
@@ -69,7 +67,6 @@ https://beta-api.crunchyroll.com/cms url response-body offset_ms":\d+ response-b
 ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig url reject
 # > caifu
 ^https?:\/\/emdcadvertise\.eastmoney\.com\/infoService\/v\d url reject
-
 
 # ======= D ======= #
 # > dashixiong
@@ -105,8 +102,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject
 ^https?:\/\/cdn\.dianshihome\.com\/static\/ad\/ url reject
 
-
-
 # ======= E ======= #
 # > elema
 ^https?:\/\/elemecdn.com\/.+\/sitemap url reject
@@ -115,7 +110,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/fuss10.elemecdn.com\/.+.mp4 url reject
 ^https?:\/\/www1.elecfans.com\/www\/delivery\/ url reject
 
-
 # ======= F ======= #
 # > feizhu
 ^https?:\/\/gw\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3}-\d{4}\.(jpg|png)$ url reject
@@ -123,7 +117,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis url reject
 ^https?:\/\/47\.100\.65\.202\/api\/mobile\/index\.php\?version=\d&mobile=yes&module=basicdata&type=forumlist url response-body adv response-body ddgksf2013
 ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/fly.js
-
 
 # ======= G ======= #
 # > gongshijilu
@@ -138,7 +131,6 @@ https://guanyu.longfor.com/app-server/api/v1/main/start url reject
 # > guojiadili
 ^https?:\/\/dili\.bdatu\.com\/jiekou\/ad url reject
 ^https?+:\/\/wap\.ngchina\.cn\/news\/adverts url reject
-
 
 # ======= H ======= #
 # > haochezhu
@@ -170,13 +162,11 @@ https://fbchina.flipchina.cn/v2/ad/query/* url reject
 # > huabao
 ^https?:\/\/api\.touker\.com\/v2\/IAdvertisementAPI\.queryStartAdvertisement url reject
 
-
 # ======= I ======= #
 # > i4
 ^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml url reject
 # > i3@ddgksf2013
 #^https?:\/\/www\.i3zh\.com url response-body cm-pop-up-banners response-body ddgksf2013
-
 
 # ======= J ======= #
 # > jianxun
@@ -218,7 +208,6 @@ https://jdread-api.jd.com/jdread/api/popup url reject-200
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A002 url reject-200
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A009 url reject-200
 
-
 # ======= K ======= #
 # > kfc
 ^https?:\/\/res.kfc.com.cn\/advertisement\/ url reject
@@ -258,7 +247,6 @@ https://open3.vistastory.com/v3/api.*get_popup url reject
 # > kuaishou
 ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ url reject
 
-
 # ======= L ======= #
 # > LinXi@ddgksf2013
 ^https?:\/\/api\.internetofcity\.cn\/api\/resource\/anon\/popups\/getSplashList url reject-dict
@@ -274,7 +262,6 @@ https://tagit.hyhuo.com/recover/list url reject
 https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSplashFrequencyStatistics|getPopInfo|getAppEntranceConfig|promote\/list|getSplash|outing\/reqFoundNewList|outing\/reqIndex) url reject
 # > LanRenTingShu
 ^https?:\/\/.*\/yyting\/advertclient\/ClientAdvertList.action url reject
-
 
 # ======= M ======= #
 # > MeiRiYouXian
@@ -312,9 +299,7 @@ http://mangaapi.manhuaren.com/v2/ad/getMultiAdsStrategy url reject
 ^https?:\/\/api\.taou\.com\/sdk\/global\/splash_ad url reject
 ^https?:\/\/track\.mm\.taou\.com/v\d\/track url reject
 
-
 # ======= N ======= #
-
 
 # ======= O ======= #
 # > omofun
@@ -325,8 +310,6 @@ http://mangaapi.manhuaren.com/v2/ad/getMultiAdsStrategy url reject
 ^https?:\/\/slapi\.oray\.net\/client\/ad url reject
 ^https?:\/\/slapi\.oray\.net\/adver url reject
 
-
-
 # ======= P ======= #
 # > pinduoduo
 ^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash url reject-200
@@ -334,7 +317,6 @@ http://mangaapi.manhuaren.com/v2/ad/getMultiAdsStrategy url reject
 ^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/ url reject-200
 # > pengpainews
 ^https?:\/\/adpai\.thepaper\.cn\/.+&ad= url reject
-
 
 # ======= Q ======= #
 # > qqbrower
@@ -348,13 +330,11 @@ https://homefront.qunar.com/front/splash/ad url reject
 # > QiDianDuShu
 ^https?:\/\/magev\d\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen url reject
 
-
 # ======= R ======= #
 # > RenMinRiBao@ddgksf2013
 ^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/getAdvertImage url reject
 ^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv url reject-dict
 ^https?:\/\/stat\.peopleapp\.com\/ url reject
-
 
 # ======= S ======= #
 # > shaoshupai
@@ -391,7 +371,6 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do url rejec
 # > suning
 ^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo url reject
 
-
 # ======= T ======= #
 # > tianfutong
 ^https?:\/\/tft-app\.cdtft\.cn\/gateway-customer\/tftapp\/tft-ams\/api\/appAd url response-body officialAdvertResultVo response-body ddgksf2013
@@ -424,13 +403,9 @@ https://top-widgets-api.xiaozujian.com/api/ad/config url reject-200
 # > tonghuashun
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend url reject
 
-
-
 # ======= U ======= #
 
-
 # ======= V ======= #
-
 
 # ======= W ======= #
 # > weipinhui
@@ -465,7 +440,6 @@ https:\/\/yanxuan.nosdn.127.net\/.*\.mp4 url reject-dict
 # > wangyikaola
 ^https?:\/\/sp\.kaola\.com\/api\/openad url reject
 ^https?:\/\/gw\.kaola\.com\/gw\/dgmobile\/newOpenAd url reject
-
 
 # ======= X ======= #
 # > xinyue
@@ -509,7 +483,6 @@ https:\/\/yanxuan.nosdn.127.net\/.*\.mp4 url reject-dict
 # > xifandongman
 ^https?:\/\/pzoap\.moedot\.net\/xgapp\.php\/v2\/top_notice url reject-200
 
-
 # ======= Y ======= #
 # > yanaifei
 ^https?:\/\/pipi\.4kya\.com\/\/xgapp\.php\/v3\/advert\.position=[^2]+ url reject-200
@@ -526,7 +499,6 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 ^https?:\/\/service\.busi\.inke\.cn\/api\/flash\/screen url reject
 # > YinxiangNote
 ^https?:\/\/app\.yinxiang\.com\/ads\/ url reject-200
-
 
 # ======= Z ======= #
 # > zhongguoyidong
