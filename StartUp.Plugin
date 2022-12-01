@@ -16,7 +16,8 @@ hostname = ad.12306.cn, 103.91.210.141, js-ad.ayximgs.com, pzoap.moedot.com, pip
 # > 555
 ^https:\/\/vip7\.fzwdyy\.cn:8083\/api\/getAdvertInfo url reject-200
 # > 12306
-^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/12306.js
+^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/12306.js
+
 
 # ======= A ======= #
 # > aihuishou
@@ -31,7 +32,7 @@ hostname = ad.12306.cn, 103.91.210.141, js-ad.ayximgs.com, pzoap.moedot.com, pip
 # > alibaba
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ url reject
 # > aliyunpan
-^https?:\/\/api\.aliyundrive\.com\/apps\/v\d\/users\/apps\/widgets$ url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/alidrive.js
+^https?:\/\/api\.aliyundrive\.com\/apps\/v\d\/users\/apps\/widgets$ url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/alidrive.js
 
 # ======= B ======= #
 # > baiduditu
@@ -48,6 +49,7 @@ hostname = ad.12306.cn, 103.91.210.141, js-ad.ayximgs.com, pzoap.moedot.com, pip
 ^https?:\/\/pan\.baidu\.com\/act\/v\d\/welfare\/list url reject-200
 ^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/ad url reject-200
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject-200
+
 
 # ======= C ======= #
 # > clicli
@@ -67,6 +69,7 @@ https://beta-api.crunchyroll.com/cms url response-body offset_ms":\d+ response-b
 ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig url reject
 # > caifu
 ^https?:\/\/emdcadvertise\.eastmoney\.com\/infoService\/v\d url reject
+
 
 # ======= D ======= #
 # > dashixiong
@@ -102,6 +105,8 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject
 ^https?:\/\/cdn\.dianshihome\.com\/static\/ad\/ url reject
 
+
+
 # ======= E ======= #
 # > elema
 ^https?:\/\/elemecdn.com\/.+\/sitemap url reject
@@ -110,13 +115,15 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/fuss10.elemecdn.com\/.+.mp4 url reject
 ^https?:\/\/www1.elecfans.com\/www\/delivery\/ url reject
 
+
 # ======= F ======= #
 # > feizhu
 ^https?:\/\/gw\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3}-\d{4}\.(jpg|png)$ url reject
 # > feikechaguan@ddgksf2013
 ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis url reject
 ^https?:\/\/47\.100\.65\.202\/api\/mobile\/index\.php\?version=\d&mobile=yes&module=basicdata&type=forumlist url response-body adv response-body ddgksf2013
-^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/fly.js
+^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/fly.js
+
 
 # ======= G ======= #
 # > gongshijilu
@@ -131,6 +138,7 @@ https://guanyu.longfor.com/app-server/api/v1/main/start url reject
 # > guojiadili
 ^https?:\/\/dili\.bdatu\.com\/jiekou\/ad url reject
 ^https?+:\/\/wap\.ngchina\.cn\/news\/adverts url reject
+
 
 # ======= H ======= #
 # > haochezhu
@@ -162,11 +170,13 @@ https://fbchina.flipchina.cn/v2/ad/query/* url reject
 # > huabao
 ^https?:\/\/api\.touker\.com\/v2\/IAdvertisementAPI\.queryStartAdvertisement url reject
 
+
 # ======= I ======= #
 # > i4
 ^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml url reject
 # > i3@ddgksf2013
 #^https?:\/\/www\.i3zh\.com url response-body cm-pop-up-banners response-body ddgksf2013
+
 
 # ======= J ======= #
 # > jianxun
@@ -175,13 +185,13 @@ https://fbchina.flipchina.cn/v2/ad/query/* url reject
 https://jdread-api.jd.com/jdread/api/channel/module/opens url reject-200
 https://jdread-api.jd.com/jdread/api/popup url reject-200
 # > jingxi
-^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/startup.js
+^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/startup.js
 # > jingdong
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url reject-dict
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts url reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/jd_json.js
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/jd_json.js
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/jd_json.js
 # > jingdongjinrong
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture url reject
 # > jingdonglite
@@ -208,6 +218,7 @@ https://jdread-api.jd.com/jdread/api/popup url reject-200
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A002 url reject-200
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A009 url reject-200
 
+
 # ======= K ======= #
 # > kfc
 ^https?:\/\/res.kfc.com.cn\/advertisement\/ url reject
@@ -229,13 +240,13 @@ https://api.gotokeep.com/cauchy/user/notice/growth/guide url reject-dict
 ^https?:\/\/api\.gotokeep\.com\/ads\/v\d\/ads\/preload url reject
 ^https?:\/\/api\.gotokeep\.com\/training\/box\/config url reject
 ^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check url reject
-^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
-^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
-https://api.gotokeep.com/homepage/v7/tab/find url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
-https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
-https://api.gotokeep.com/sportpage/sport/v3/mysport url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
+^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+https://api.gotokeep.com/homepage/v7/tab/find url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
+https://api.gotokeep.com/sportpage/sport/v3/mysport url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js
 # > kuan@kk pp
-^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/coolapk.js
+^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
 ^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk url reject
 # > kuan@ddgksf2013
 ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
@@ -246,6 +257,7 @@ https://open3.vistastory.com/v3/api/index/loading_ad url reject
 https://open3.vistastory.com/v3/api.*get_popup url reject
 # > kuaishou
 ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ url reject
+
 
 # ======= L ======= #
 # > LinXi@ddgksf2013
@@ -262,6 +274,7 @@ https://tagit.hyhuo.com/recover/list url reject
 https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSplashFrequencyStatistics|getPopInfo|getAppEntranceConfig|promote\/list|getSplash|outing\/reqFoundNewList|outing\/reqIndex) url reject
 # > LanRenTingShu
 ^https?:\/\/.*\/yyting\/advertclient\/ClientAdvertList.action url reject
+
 
 # ======= M ======= #
 # > MeiRiYouXian
@@ -299,7 +312,9 @@ http://mangaapi.manhuaren.com/v2/ad/getMultiAdsStrategy url reject
 ^https?:\/\/api\.taou\.com\/sdk\/global\/splash_ad url reject
 ^https?:\/\/track\.mm\.taou\.com/v\d\/track url reject
 
+
 # ======= N ======= #
+
 
 # ======= O ======= #
 # > omofun
@@ -310,6 +325,8 @@ http://mangaapi.manhuaren.com/v2/ad/getMultiAdsStrategy url reject
 ^https?:\/\/slapi\.oray\.net\/client\/ad url reject
 ^https?:\/\/slapi\.oray\.net\/adver url reject
 
+
+
 # ======= P ======= #
 # > pinduoduo
 ^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash url reject-200
@@ -317,6 +334,7 @@ http://mangaapi.manhuaren.com/v2/ad/getMultiAdsStrategy url reject
 ^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/ url reject-200
 # > pengpainews
 ^https?:\/\/adpai\.thepaper\.cn\/.+&ad= url reject
+
 
 # ======= Q ======= #
 # > qqbrower
@@ -330,11 +348,13 @@ https://homefront.qunar.com/front/splash/ad url reject
 # > QiDianDuShu
 ^https?:\/\/magev\d\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen url reject
 
+
 # ======= R ======= #
 # > RenMinRiBao@ddgksf2013
 ^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/getAdvertImage url reject
 ^https:\/\/app\.peopleapp\.com\/Api\/\d+/HomeApi\/adv url reject-dict
 ^https?:\/\/stat\.peopleapp\.com\/ url reject
+
 
 # ======= S ======= #
 # > shaoshupai
@@ -359,7 +379,7 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal url reject
 https://apis.lifeweek.com.cn/api/baseConfig/getIosNewConfig url reject
 # > ShunFeng@ddgksf2013
 ^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/appVersion\/detectionUpgrade url reject-dict
-https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/shunfeng_json.js
+https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/shunfeng_json.js
 https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryAdImages url reject-dict
 ^https?:\/\/shopic\.sf-express\.com\/crm\/mobile\/common\/flashscreen url reject
 # > ShanDongCMCC@ddgksf2013
@@ -367,9 +387,10 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do url rejec
 # > Soul@kyle
 ^https:\/\/data-collector\.soulapp\.cn\/api\/data\/report$ url reject
 # > Stay@ddgksf2013
-^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/stay.js
+^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/stay.js
 # > suning
 ^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo url reject
+
 
 # ======= T ======= #
 # > tianfutong
@@ -403,9 +424,13 @@ https://top-widgets-api.xiaozujian.com/api/ad/config url reject-200
 # > tonghuashun
 ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend url reject
 
+
+
 # ======= U ======= #
 
+
 # ======= V ======= #
+
 
 # ======= W ======= #
 # > weipinhui
@@ -441,13 +466,14 @@ https:\/\/yanxuan.nosdn.127.net\/.*\.mp4 url reject-dict
 ^https?:\/\/sp\.kaola\.com\/api\/openad url reject
 ^https?:\/\/gw\.kaola\.com\/gw\/dgmobile\/newOpenAd url reject
 
+
 # ======= X ======= #
 # > xinyue
 ^https?:\/\/bgw\.xinyue\.qq\.com\/xyapi\.PageService\/GetIndexPopFlash url reject-200
 # > XiaoHongShu@ddgksf2013
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/xiaohongshu.js
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\? url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/xiaohongshu.js
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\? url script-response-body https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/xiaohongshu.js
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/homefeed\? url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\? url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/xiaohongshu.js
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/hot_list url response-body items":\[.+\] response-body items":[]
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/trending url response-body queries":\[.+\] response-body queries":[]
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/tag\/ads_engage url reject-dict
@@ -483,6 +509,7 @@ https:\/\/yanxuan.nosdn.127.net\/.*\.mp4 url reject-dict
 # > xifandongman
 ^https?:\/\/pzoap\.moedot\.net\/xgapp\.php\/v2\/top_notice url reject-200
 
+
 # ======= Y ======= #
 # > yanaifei
 ^https?:\/\/pipi\.4kya\.com\/\/xgapp\.php\/v3\/advert\.position=[^2]+ url reject-200
@@ -499,6 +526,7 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 ^https?:\/\/service\.busi\.inke\.cn\/api\/flash\/screen url reject
 # > YinxiangNote
 ^https?:\/\/app\.yinxiang\.com\/ads\/ url reject-200
+
 
 # ======= Z ======= #
 # > zhongguoyidong
