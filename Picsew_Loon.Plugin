@@ -2,9 +2,11 @@
 #!desc=Picsew VIP Unlock
 #!openUrl=https://github.com/Davin-Zhang/Quantumult-X-Rules
 
-[Mitm]
-hostname =buy.itunes.apple.com
-
 [Script]
-# Picsew解锁专业版
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PicsewProCrack.js, requires-body=true, timeout=10, tag=Picsew
+
+# Picsew
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PicsewProCrack.js, requires-body=true, timeout=10, tag=PicsewProCrack
+
+[MITM]
+
+hostname = buy.itunes.apple.com
