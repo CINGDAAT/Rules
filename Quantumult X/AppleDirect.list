@@ -1,86 +1,86 @@
-# Apple 直连
+# Apple Direct
 
-# Apple 中国官网
-DOMAIN-SUFFIX,apple.com.cn,DIRECT
+# Apple China
+HOST-SUFFIX, apple.com.cn
 
 # FindMy
-user-agent, *com.apple.mobileme.fmip1, DIRECT
-user-agent, FindMyFriends*, DIRECT
-user-agent, FindMyiPhone*, DIRECT
-user-agent, FMDClient*, DIRECT
-user-agent, FMFD*, DIRECT
-user-agent, fmflocatord*, DIRECT
+user-agent, *com.apple.mobileme.fmip1
+user-agent, FindMyFriends*
+user-agent, FindMyiPhone*
+user-agent, FMDClient*
+user-agent, FMFD*
+user-agent, fmflocatord*
 
 # Weather
-USER-AGENT,*WeatherFoundation*,DIRECT
-DOMAIN,weather-data.apple.com,DIRECT
+USER-AGENT,*WeatherFoundation*
+HOST, weather-data.apple.com
 
 # Store
-DOMAIN-SUFFIX,store.apple.com,DIRECT
+HOST-SUFFIX, store.apple.com
 
 # Spotlight
-DOMAIN,api.smoot.apple.cn,DIRECT
+HOST, api.smoot.apple.cn
 
 # Hotspot captive
-DOMAIN,captive.apple.com,DIRECT
+HOST, captive.apple.com
 
 # Apple Pay
-DOMAIN,smp-device-content.apple.com,DIRECT
-DOMAIN-KEYWORD,smp-device,DIRECT
-USER-AGENT,passd*,DIRECT
-USER-AGENT,Wallet*,DIRECT
+HOST, smp-device-content.apple.com
+HOST-KEYWORD, smp-device
+USER-AGENT,passd*
+USER-AGENT,Wallet*
 
 # Reserve
-DOMAIN,reserve-prime.apple.com,DIRECT
+HOST, reserve-prime.apple.com
 
 # Push
-DOMAIN-KEYWORD,push-apple.com.akadns.net,DIRECT
-DOMAIN-SUFFIX,push.apple.com.akadns.net,DIRECT
-DOMAIN-SUFFIX,push.apple.com,DIRECT
+HOST-KEYWORD, push-apple.com.akadns.net
+HOST-SUFFIX, push.apple.com.akadns.net
+HOST-SUFFIX, push.apple.com
 
 # Asset Cache Locator Service
-DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
+HOST-SUFFIX, lcdn-locator.apple.com
 
 # Caching Server Registration
-DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
+HOST-SUFFIX, lcdn-registration.apple.com
 
 # Translation
 # See https://github.com/ripperhe/Bob/issues/405
-DOMAIN,sequoia.apple.com,DIRECT
-DOMAIN,seed-sequoia.siri.apple.com,DIRECT
+HOST, sequoia.apple.com
+HOST, seed-sequoia.siri.apple.com
 
 # Apple Global CDN
 #
 # iOS App Store
-DOMAIN,iosapps.itunes.apple.com,{{ cdn_rule }}
-USER-AGENT,com.apple.appstored*,{{ cdn_rule }}
+HOST, iosapps.itunes.apple.com
+USER-AGENT,com.apple.appstored*
 
 # Mac App Store
-DOMAIN,osxapps.itunes.apple.com,{{ cdn_rule }}
-DOMAIN,oscdn.apple.com,{{ cdn_rule }}
-PROCESS-NAME,storedownloadd,{{ cdn_rule }}
+HOST, osxapps.itunes.apple.com
+HOST, oscdn.apple.com
+PROCESS-NAME,storedownloadd
 
 # App Store & iTunes Images
-host-suffix, mzstatic.com, Apple-CDN
+host-suffix, mzstatic.com
 
 # Apple Music Streaming
-host, aod.itunes.apple.com, Apple-CDN
-host, mvod.itunes.apple.com, Apple-CDN
-host, streamingaudio.itunes.apple.com, Apple-CDN
+host, aod.itunes.apple.com
+host, mvod.itunes.apple.com
+host, streamingaudio.itunes.apple.com
 
 # Update
-host, supportdownload.apple.com, Apple-CDN
-host, appldnld.apple.com, Apple-CDN
-host, swcdn.apple.com, Apple-CDN
-host, apptrailers.itunes.apple.com, Apple-CDN
-host, updates-http.cdn-apple.com, Apple-CDN
-host, updates.cdn-apple.com, Apple-CDN
+host, supportdownload.apple.com
+host, appldnld.apple.com
+host, swcdn.apple.com
+host, apptrailers.itunes.apple.com
+host, updates-http.cdn-apple.com
+host, updates.cdn-apple.com
 
 # Map
-host-suffix, ls.apple.com, Apple-CDN
-host, gs-loc-cn.apple.com, Apple-CDN
+host-suffix, ls.apple.com
+host, gs-loc-cn.apple.com
 
 # Other
-host, download.developer.apple.com, Apple-CDN
-host, downloaddispatch.itunes.apple.com, Apple-CDN
-host, app-site-association.cdn-apple.com, Apple-CDN
+host, download.developer.apple.com
+host, downloaddispatch.itunes.apple.com
+host, app-site-association.cdn-apple.com
