@@ -19,7 +19,6 @@ DOMAIN,weather-data.apple.com,DIRECT
 DOMAIN-SUFFIX,store.apple.com,DIRECT
 
 # Spotlight
-DOMAIN,api.smoot.apple.com,DIRECT
 DOMAIN,api.smoot.apple.cn,DIRECT
 
 # Hotspot captive
