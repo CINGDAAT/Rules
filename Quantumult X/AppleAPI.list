@@ -41,3 +41,21 @@ DOMAIN-SUFFIX,itunes.com,{{ api_rule }}
 DOMAIN-SUFFIX,itunes.apple.com,{{ api_rule }}
 DOMAIN-SUFFIX,apple,{{ api_rule }}
 DOMAIN,weather-analytics-events.apple.com,{{ api_rule }}
+
+# Maps
+USER-AGENT,%E5%9C%B0%E5%9B%BE*,{{ location_rule }}
+
+# Settings
+USER-AGENT,com.apple.geod*,{{ location_rule }}
+USER-AGENT,com.apple.Maps,{{ location_rule }}
+USER-AGENT,geod*,{{ location_rule }}
+USER-AGENT,locationd*,{{ location_rule }}
+USER-AGENT,Maps*,{{ location_rule }}
+
+# locationd
+DOMAIN,gs-loc.apple.com,{{ location_rule }}
+DOMAIN-SUFFIX,ls.apple.com.akadns.net,{{ location_rule }}
+DOMAIN-SUFFIX,ls.apple.com.edgesuite.net,{{ location_rule }}
+
+# GeoServices.framework
+DOMAIN-SUFFIX,ls.apple.com,{{ location_rule }}
