@@ -3,59 +3,59 @@
 # Apple Non-China CDN
 #
 # Trailer
-DOMAIN-SUFFIX,hls.itunes.apple.com,{{ default_rule }}
+HOST-SUFFIX, hls.itunes.apple.com
 
 # Movie Stream
-DOMAIN-SUFFIX,hls-amt.itunes.apple.com,{{ default_rule }}
+HOST-SUFFIX, hls-amt.itunes.apple.com
 
 # iTunes Music Stream
-DOMAIN-SUFFIX,audio-ssl.itunes.apple.com,{{ default_rule }}
-DOMAIN-SUFFIX,cdn-apple.com,{{ default_rule }}
-DOMAIN,cdn.apple-cloudkit.com,{{ default_rule }}
+HOST-SUFFIX, audio-ssl.itunes.apple.com
+HOST-SUFFIX, cdn-apple.com
+HOST, cdn.apple-cloudkit.com
 
 # Developer
-DOMAIN,devimages-cdn.apple.com,{{ default_rule }}
-DOMAIN,devstreaming-cdn.apple.com,{{ default_rule }}
-DOMAIN,js-cdn.music.apple.com,{{ default_rule }}
-DOMAIN,docs-assets.developer.apple.com,{{ default_rule }}
+HOST, devimages-cdn.apple.com
+HOST, devstreaming-cdn.apple.com
+HOST, js-cdn.music.apple.com
+HOST, docs-assets.developer.apple.com
 
 # Other
-DOMAIN-SUFFIX,apple-dns.net,{{ default_rule }}
+HOST-SUFFIX, apple-dns.net
 
 # OCSP
-DOMAIN-SUFFIX,ocsp.apple.com,{{ default_rule }}
-USER-AGENT,com.apple.trustd*,{{ default_rule }}
+HOST-SUFFIX, ocsp.apple.com
+USER-AGENT,com.apple.trustd*
 
 # Apple URL Shortener
-DOMAIN-SUFFIX,appsto.re
+HOST-SUFFIX, appsto.re
 
 # Spotlight
-DOMAIN-SUFFIX,smoot.apple.com
+HOST-SUFFIX, smoot.apple.com
 
 # Podcasts
-DOMAIN,amp-api.podcasts.apple.com
+HOST, amp-api.podcasts.apple.com
 
 # Apple Music Web
-DOMAIN,beta.music.apple.com
+HOST, beta.music.apple.com
 
 # iBooks Store download
-DOMAIN,books.itunes.apple.com
+HOST, books.itunes.apple.com
 
 # Apple Music Radio
-DOMAIN,radio.itunes.apple.com
+HOST, radio.itunes.apple.com
 
 # > Web Preview
-DOMAIN,apps.apple.com
-DOMAIN,books.apple.com
-DOMAIN,itunes.apple.com
-DOMAIN,tv.apple.com
+HOST, apps.apple.com
+HOST, books.apple.com
+HOST, itunes.apple.com
+HOST, tv.apple.com
 
 # > News
-DOMAIN,gateway.icloud.com
-DOMAIN-SUFFIX,apple.news
-DOMAIN,news-assets.apple.com
-DOMAIN,news-client.apple.com
-DOMAIN,news-client-search.apple.com
-DOMAIN,news-edge.apple.com
-DOMAIN,news-events.apple.com
-DOMAIN,apple.comscoreresearch.com
+HOST, gateway.icloud.com
+HOST-SUFFIX, apple.news
+HOST, news-assets.apple.com
+HOST, news-client.apple.com
+HOST, news-client-search.apple.com
+HOST, news-edge.apple.com
+HOST, news-events.apple.com
+HOST, apple.comscoreresearch.com
