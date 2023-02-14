@@ -49,3 +49,39 @@ DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
 # See https://github.com/ripperhe/Bob/issues/405
 DOMAIN,sequoia.apple.com,DIRECT
 DOMAIN,seed-sequoia.siri.apple.com,DIRECT
+
+# Apple Global CDN
+#
+# iOS App Store
+DOMAIN,iosapps.itunes.apple.com,{{ cdn_rule }}
+USER-AGENT,com.apple.appstored*,{{ cdn_rule }}
+
+# Mac App Store
+DOMAIN,osxapps.itunes.apple.com,{{ cdn_rule }}
+DOMAIN,oscdn.apple.com,{{ cdn_rule }}
+PROCESS-NAME,storedownloadd,{{ cdn_rule }}
+
+# App Store & iTunes Images
+host-suffix, mzstatic.com, Apple-CDN
+
+# Apple Music Streaming
+host, aod.itunes.apple.com, Apple-CDN
+host, mvod.itunes.apple.com, Apple-CDN
+host, streamingaudio.itunes.apple.com, Apple-CDN
+
+# Update
+host, supportdownload.apple.com, Apple-CDN
+host, appldnld.apple.com, Apple-CDN
+host, swcdn.apple.com, Apple-CDN
+host, apptrailers.itunes.apple.com, Apple-CDN
+host, updates-http.cdn-apple.com, Apple-CDN
+host, updates.cdn-apple.com, Apple-CDN
+
+# Map
+host-suffix, ls.apple.com, Apple-CDN
+host, gs-loc-cn.apple.com, Apple-CDN
+
+# Other
+host, download.developer.apple.com, Apple-CDN
+host, downloaddispatch.itunes.apple.com, Apple-CDN
+host, app-site-association.cdn-apple.com, Apple-CDN
