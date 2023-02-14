@@ -1,0 +1,51 @@
+# Apple 直连
+
+# Apple 中国官网
+DOMAIN-SUFFIX,apple.com.cn,DIRECT
+
+# FindMy
+user-agent, *com.apple.mobileme.fmip1, DIRECT
+user-agent, FindMyFriends*, DIRECT
+user-agent, FindMyiPhone*, DIRECT
+user-agent, FMDClient*, DIRECT
+user-agent, FMFD*, DIRECT
+user-agent, fmflocatord*, DIRECT
+
+# Weather
+USER-AGENT,*WeatherFoundation*,DIRECT
+DOMAIN,weather-data.apple.com,DIRECT
+
+# Store
+DOMAIN-SUFFIX,store.apple.com,DIRECT
+
+# Spotlight
+DOMAIN,api.smoot.apple.com,DIRECT
+DOMAIN,api.smoot.apple.cn,DIRECT
+
+# Hotspot captive
+DOMAIN,captive.apple.com,DIRECT
+
+# Apple Pay
+DOMAIN,smp-device-content.apple.com,DIRECT
+DOMAIN-KEYWORD,smp-device,DIRECT
+USER-AGENT,passd*,DIRECT
+USER-AGENT,Wallet*,DIRECT
+
+# Reserve
+DOMAIN,reserve-prime.apple.com,DIRECT
+
+# Push
+DOMAIN-KEYWORD,push-apple.com.akadns.net,DIRECT
+DOMAIN-SUFFIX,push.apple.com.akadns.net,DIRECT
+DOMAIN-SUFFIX,push.apple.com,DIRECT
+
+# Asset Cache Locator Service
+DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
+
+# Caching Server Registration
+DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
+
+# Translation
+# See https://github.com/ripperhe/Bob/issues/405
+DOMAIN,sequoia.apple.com,DIRECT
+DOMAIN,seed-sequoia.siri.apple.com,DIRECT
