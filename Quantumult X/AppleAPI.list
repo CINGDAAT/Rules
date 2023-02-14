@@ -6,7 +6,7 @@ DOMAIN,guzzoni.apple.com,{{ api_rule }}
 DOMAIN,apps.apple.com,{{ api_rule }}
 DOMAIN,xp.apple.com,{{ api_rule }}
 DOMAIN,bag.itunes.apple.com,{{ api_rule }}
-DOMAIN,buy.itunes.apple.com
+HOST,buy.itunes.apple.com
 DOMAIN,api-edge.apps.apple.com,{{ api_rule }}
 DOMAIN,api.apps.apple.com,{{ api_rule }}
 DOMAIN,play.itunes.apple.com,{{ api_rule }}
