@@ -2,46 +2,45 @@
 
 # 一些 com.apple.appstored* 会连接的 API（优先级高）
 # App Store
-DOMAIN,guzzoni.apple.com,{{ api_rule }}
-DOMAIN,apps.apple.com,{{ api_rule }}
-DOMAIN,xp.apple.com,{{ api_rule }}
-DOMAIN,bag.itunes.apple.com,{{ api_rule }}
-HOST,buy.itunes.apple.com
-DOMAIN,api-edge.apps.apple.com,{{ api_rule }}
-DOMAIN,api.apps.apple.com,{{ api_rule }}
-DOMAIN,play.itunes.apple.com,{{ api_rule }}
-DOMAIN,se.itunes.apple.com,{{ api_rule }}
-DOMAIN,se-edge.itunes.apple.com,{{ api_rule }}
-DOMAIN,su.itunes.apple.com,{{ api_rule }}
-DOMAIN,upp.itunes.apple.com,{{ api_rule }}
-DOMAIN,beta.music.apple.com,{{ api_rule }}
-DOMAIN-KEYWORD,buy.itunes.apple.com,{{ api_rule }}
-DOMAIN-SUFFIX,itunes-apple.com.akadns.net,{{ api_rule }}
+HOST, guzzoni.apple.com
+HOST, apps.apple.com
+HOST, xp.apple.com
+HOST, bag.itunes.apple.com
+HOST, api-edge.apps.apple.com
+HOST, api.apps.apple.com
+HOST, play.itunes.apple.com
+HOST, se.itunes.apple.com
+HOST, se-edge.itunes.apple.com
+HOST, su.itunes.apple.com
+HOST, upp.itunes.apple.com
+HOST, beta.music.apple.com
+HOST-KEYWORD, buy.itunes.apple.com
+HOST-SUFFIX, itunes-apple.com.akadns.net
 
 # iMessage
-DOMAIN-SUFFIX,ess.apple.com,{{ api_rule }}
+HOST-SUFFIX, ess.apple.com
 
 # Apple Music
-DOMAIN-SUFFIX,music.apple.com,{{ api_rule }}
-DOMAIN-SUFFIX,sonos-music.apple.com,{{ api_rule }}
+HOST-SUFFIX, music.apple.com
+HOST-SUFFIX, sonos-music.apple.com
 
 # Configuration
-DOMAIN,configuration.apple.com,{{ api_rule }}
+HOST, configuration.apple.com
 
 # iCloud 上传和下载
-DOMAIN-SUFFIX,icloud-content.com,{{ api_rule }}
-DOMAIN-SUFFIX,me.com,{{ api_rule }}
-DOMAIN-SUFFIX,apple.com,{{ api_rule }}
-DOMAIN-SUFFIX,icloud.com,{{ api_rule }}
-DOMAIN-SUFFIX,apple-cloudkit.com,{{ api_rule }}
+HOST-SUFFIX, icloud-content.com
+HOST-SUFFIX, me.com
+HOST-SUFFIX, apple.com
+HOST-SUFFIX, icloud.com
+HOST-SUFFIX, apple-cloudkit.com
 
 # Others
-DOMAIN-SUFFIX,aaplimg.com,{{ api_rule }}
-DOMAIN-SUFFIX,apple.co,{{ api_rule }}
-DOMAIN-SUFFIX,itunes.com,{{ api_rule }}
-DOMAIN-SUFFIX,itunes.apple.com,{{ api_rule }}
-DOMAIN-SUFFIX,apple,{{ api_rule }}
-DOMAIN,weather-analytics-events.apple.com,{{ api_rule }}
+HOST-SUFFIX, aaplimg.com
+HOST-SUFFIX, apple.co
+HOST-SUFFIX, itunes.com
+HOST-SUFFIX, itunes.apple.com
+HOST-SUFFIX, apple
+HOST, weather-analytics-events.apple.com
 
 # Maps
 USER-AGENT,%E5%9C%B0%E5%9B%BE*,{{ location_rule }}
@@ -54,9 +53,9 @@ USER-AGENT,locationd*,{{ location_rule }}
 USER-AGENT,Maps*,{{ location_rule }}
 
 # locationd
-DOMAIN,gs-loc.apple.com,{{ location_rule }}
-DOMAIN-SUFFIX,ls.apple.com.akadns.net,{{ location_rule }}
-DOMAIN-SUFFIX,ls.apple.com.edgesuite.net,{{ location_rule }}
+HOST, gs-loc.apple.com,{{ location_rule }}
+HOST-SUFFIX, ls.apple.com.akadns.net,{{ location_rule }}
+HOST-SUFFIX, ls.apple.com.edgesuite.net,{{ location_rule }}
 
 # GeoServices.framework
-DOMAIN-SUFFIX,ls.apple.com,{{ location_rule }}
+HOST-SUFFIX, ls.apple.com,{{ location_rule }}
