@@ -51,7 +51,7 @@ HOST, itunes.apple.com
 HOST, tv.apple.com
 
 # > News
-HOST, gateway.icloud.com
+#HOST, gateway.icloud.com
 HOST-SUFFIX, apple.news
 HOST, news-assets.apple.com
 HOST, news-client.apple.com
