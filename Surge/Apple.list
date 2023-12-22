@@ -1,0 +1,168 @@
+# http://www.jjinc.com.au/announcements/apple170008services
+# https://gist.github.com/joseconstela/a6e06ef9737e097eddcaf940ea313e38
+# https://support.apple.com/zh-cn/HT210060
+#
+# Apple 直连
+#
+USER-AGENT,*com.apple.mobileme.fmip1,Direct
+# Weather
+USER-AGENT,*WeatherFoundation*,Direct
+DOMAIN,weather-data.apple.com,Direct
+# Maps
+USER-AGENT,%E5%9C%B0%E5%9B%BE*,Direct
+# Settings
+USER-AGENT,%E8%AE%BE%E7%BD%AE*,Direct
+USER-AGENT,com.apple.geod*,Direct
+USER-AGENT,com.apple.Maps,Direct
+USER-AGENT,FindMyFriends*,Direct
+USER-AGENT,FindMyiPhone*,Direct
+USER-AGENT,FMDClient*,Direct
+USER-AGENT,FMFD*,Direct
+USER-AGENT,fmflocatord*,Direct
+USER-AGENT,geod*,Direct
+USER-AGENT,locationd*,Direct
+USER-AGENT,Maps*,Direct
+
+#
+# 一些 com.apple.appstored* 会连接的 API（优先级高）
+#
+DOMAIN,guzzoni.apple.com,Apple
+DOMAIN,apps.apple.com,Apple
+DOMAIN,xp.apple.com,Apple
+DOMAIN,bag.itunes.apple.com,Apple
+DOMAIN,api-edge.apps.apple.com,Apple
+DOMAIN,api.apps.apple.com,Apple
+DOMAIN,play.itunes.apple.com,Apple
+DOMAIN,se.itunes.apple.com,Apple
+DOMAIN,se-edge.itunes.apple.com,Apple
+DOMAIN,su.itunes.apple.com,Apple
+DOMAIN,upp.itunes.apple.com,Apple
+DOMAIN,beta.music.apple.com,Apple
+DOMAIN-KEYWORD,buy.itunes.apple.com,Apple
+DOMAIN-SUFFIX,itunes-apple.com.akadns.net,Apple
+
+#
+# Apple Global CDN
+#
+# iOS App Store
+DOMAIN,iosapps.itunes.apple.com,Direct
+# Mac App Store
+DOMAIN,osxapps.itunes.apple.com,Direct
+DOMAIN,oscdn.apple.com,Direct
+# Update
+DOMAIN,supportdownload.apple.com,Direct
+DOMAIN,appldnld.apple.com,Direct
+DOMAIN,appldnld.apple.com.edgesuite.net,Direct
+DOMAIN,swcdn.apple.com,Direct
+DOMAIN,apptrailers.itunes.apple.com,Direct
+DOMAIN,updates-http.cdn-apple.com,Direct
+DOMAIN,updates.cdn-apple.com,Direct
+# App Store & iTunes Images
+DOMAIN-SUFFIX,mzstatic.com,Direct
+# Mac App Store
+PROCESS-NAME,storedownloadd,Direct
+# iOS App Store
+USER-AGENT,com.apple.appstored*,Direct
+# Apple Music Streaming
+DOMAIN,aod.itunes.apple.com,Direct
+DOMAIN,mvod.itunes.apple.com,Direct
+DOMAIN,streamingaudio.itunes.apple.com,Direct
+# Other
+DOMAIN,download.developer.apple.com,Direct
+DOMAIN,downloaddispatch.itunes.apple.com,Direct
+DOMAIN,app-site-association.cdn-apple.com,Direct
+
+#
+# Apple Non-China CDN
+#
+# Trailer
+DOMAIN-SUFFIX,hls.itunes.apple.com,Proxy
+# Movie Stream
+DOMAIN-SUFFIX,hls-amt.itunes.apple.com,Proxy
+# iTunes Music Stream
+DOMAIN-SUFFIX,audio-ssl.itunes.apple.com,Proxy
+DOMAIN-SUFFIX,cdn-apple.com,Proxy
+DOMAIN,cdn.apple-cloudkit.com,Proxy
+# Developer
+DOMAIN,devimages-cdn.apple.com,Proxy
+DOMAIN,devstreaming-cdn.apple.com,Proxy
+DOMAIN,js-cdn.music.apple.com,Proxy
+DOMAIN,docs-assets.developer.apple.com,Proxy
+# Other
+DOMAIN-SUFFIX,apple-dns.net,Proxy
+# OCSP
+DOMAIN-SUFFIX,ocsp.apple.com,Proxy
+USER-AGENT,com.apple.trustd*,Proxy
+
+#
+# Apple News
+#
+USER-AGENT,AppleNews*,Proxy
+DOMAIN-SUFFIX,apple.news,Proxy
+DOMAIN,news-events.apple.com,Proxy
+DOMAIN,news-edge.apple.com,Proxy
+DOMAIN,apple.comscoreresearch.com,Proxy
+
+#
+# Apple 其他直连
+#
+# Store
+DOMAIN-SUFFIX,store.apple.com,Direct
+# Spotlight
+DOMAIN,api.smoot.apple.com,Direct
+DOMAIN,api.smoot.apple.cn,Direct
+# Hotspot captive
+DOMAIN,captive.apple.com,Direct
+# Apple Pay
+DOMAIN,smp-device-content.apple.com,Direct
+DOMAIN-KEYWORD,smp-device,Direct
+USER-AGENT,passd*,Direct
+USER-AGENT,Wallet*,Direct
+# locationd
+DOMAIN,gs-loc.apple.com,Direct
+DOMAIN-SUFFIX,ls.apple.com.akadns.net,Direct
+DOMAIN-SUFFIX,ls.apple.com.edgesuite.net,Direct
+# Reserve
+DOMAIN,reserve-prime.apple.com,Direct
+# Push
+DOMAIN-KEYWORD,push-apple.com.akadns.net,Direct
+DOMAIN-SUFFIX,push.apple.com.akadns.net,Direct
+DOMAIN-SUFFIX,push.apple.com,Direct
+# GeoServices.framework
+DOMAIN-SUFFIX,ls.apple.com,Direct
+# Asset Cache Locator Service
+DOMAIN-SUFFIX,lcdn-locator.apple.com,Direct
+# Caching Server Registration
+DOMAIN,lcdn-registration.apple.com,Direct
+DOMAIN,suconfig.apple.com,Direct
+DOMAIN,xp-cdn.apple.com,Direct
+# Translation
+# See https://github.com/ripperhe/Bob/issues/405
+DOMAIN,sequoia.apple.com,Direct
+DOMAIN,seed-sequoia.siri.apple.com,Direct
+# Settings
+DOMAIN,sq-device.apple.com,Direct
+
+#
+# Apple 其他自选
+#
+# iMessage
+DOMAIN-SUFFIX,ess.apple.com,Apple
+# Apple Music
+DOMAIN-SUFFIX,music.apple.com,Apple
+DOMAIN-SUFFIX,sonos-music.apple.com,Apple
+# Configuration
+DOMAIN,configuration.apple.com,Apple
+# Others
+DOMAIN-SUFFIX,aaplimg.com,Apple
+DOMAIN-SUFFIX,apple.co,Apple
+DOMAIN-SUFFIX,itunes.com,Apple
+DOMAIN-SUFFIX,itunes.apple.com,Apple
+DOMAIN-SUFFIX,apple,Apple
+DOMAIN,weather-analytics-events.apple.com,Apple
+# iCloud 上传和下载
+DOMAIN-SUFFIX,icloud-content.com,Apple
+DOMAIN-SUFFIX,me.com,Apple
+DOMAIN-SUFFIX,apple.com,Apple
+DOMAIN-SUFFIX,icloud.com,Apple
+DOMAIN-SUFFIX,apple-cloudkit.com,Apple
