@@ -1,0 +1,12 @@
+# Zenless Zone Zero HK, MO, TW
+IP-CIDR, 47.244.0.0/15, DIRECT, no-resolve
+IP-CIDR, 47.236.0.0/14, DIRECT, no-resolve
+IP-CIDR, 47.240.0.0/14, DIRECT, no-resolve
+IP-CIDR, 47.246.0.0/16, DIRECT, no-resolve
+IP-CIDR, 47.235.0.0/16, DIRECT, no-resolve
+
+# Genshin Impact HK, MO, TW
+IP-CIDR, 18.64.0.0/10, DIRECT, no-resolve
+IP-CIDR, 18.128.0.0/9, DIRECT, no-resolve
+IP-CIDR, 18.32.0.0/11, DIRECT, no-resolve
+
