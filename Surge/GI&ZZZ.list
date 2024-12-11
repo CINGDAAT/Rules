@@ -15,3 +15,4 @@ IP-CIDR, 35.71.64.0/18, DIRECT, no-resolve
 IP-CIDR, 35.71.128.0/17, DIRECT, no-resolve
 IP-CIDR, 35.80.0.0/12, DIRECT, no-resolve
 IP-CIDR, 35.72.0.0/13, DIRECT, no-resolve
+IP-CIDR, 3.0.0.0/9, DIRECT, no-resolve
